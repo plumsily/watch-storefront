@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAINSPRING</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,48 +19,114 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
-      rel="stylesheet"
-    />
     <!-- <link rel="stylesheet" href="/src/css/main.css" /> -->
     <link rel="stylesheet" href="/src/css/normalize.css" />
     <link rel="stylesheet" href="/dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body class="bg-neutral-200 flex flex-col items-center">
-    <header class="flex flex-row justify-between p-4 w-full">
-      <a href="#"><span class="fa fa-circle-half-stroke text-3xl"></span></a>
-      <div class="flex flex-col items-center cursor-default">
+  <body class="bg-neutral-200 flex flex-col items-center overflow-x-hidden">
+    <header
+      class="flex flex-col justify-between p-6 w-full h-full fixed text-lg font-semibold z-10"
+    >
+      <div class="flex justify-between w-full">
         <span
-          class="uppercase text-2xl font-sorts-mill tracking-tight font-semibold"
-          >39 Division Rd.</span
+          class="text-4xl font-extrabold tracking-tighter font-archivo cursor-default"
         >
-        <h1 class="text-6xl font-extrabold tracking-tighter font-archivo">
           MAINSPRING
-        </h1>
+        </span>
+        <nav>
+          <ul class="flex gap-4 font-archivo tracking-tight">
+            <li
+              class="hover:-translate-y-1 transition-transform hover-underline-animation"
+            >
+              <a href="#">FEATURED</a>
+            </li>
+            <li
+              class="hover:-translate-y-1 transition-transform hover-underline-animation"
+            >
+              <a href="#">CATALOG</a>
+            </li>
+            <li
+              class="hover:-translate-y-1 transition-transform hover-underline-animation"
+            >
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex justify-between w-full tracking-tight">
         <span
-          class="uppercase text-2xl font-sorts-mill font-semibold tracking-tight pt-1"
-          >Movement Captured</span
+          class="font-archivo flex items-center gap-1 hover:-translate-y-1 transition-transform cursor-pointer dark-mode-btn"
+          ><span class="fa fa-circle-half-stroke text-sm"></span> DARK
+          MODE</span
+        >
+        <span class="font-archivo flex items-center gap-1"
+          ><span class="fa-regular fa-copyright text-sm"></span> 2022</span
         >
       </div>
-      <span
+    </header>
+    <main class="h-screen w-screen flex justify-center items-center relative">
+      <h1
+        class="font-caudex text-8xl tracking-tighter font-semibold relative flex w-full h-full justify-center items-center"
+      >
+        <div
+          class="pr-2 font-archivo bg-neutral-200 title-first w-full h-full flex items-center justify-end"
+        >
+          <span>Capture</span>
+        </div>
+        <div
+          class="-z-10 absolute w-screen h-screen flex justify-center items-center"
+        >
+          <div class="title-middle ml-[-1rem] text-white pb-1">
+            <span class="italic">the</span> experience
+            <span class="italic">of </span>
+          </div>
+        </div>
+        <div
+          class="pl-2 font-archivo bg-neutral-200 title-last w-full h-full flex items-center"
+        >
+          <span>Movement</span>
+        </div>
+      </h1>
+      <div
+        class="overflow-hidden w-screen h-screen absolute top-0 left-0 -z-20 flex justify-center"
+      >
+        <img
+          src="img/watch-promo-1-optimized.gif"
+          alt="Rolex Cosmograph Daytona"
+          class="object-fill -z-20 promo-gif"
+        />
+      </div>
+      <!-- <div
+        class="overflow-hidden max-w-full w-screen h-screen absolute top-0 left-0 -z-20"
+      >
+        <div class="frame-container">
+          <iframe
+            class=""
+            src="https://www.youtube.com/embed/l0D9OWiQAx4?playlist=l0D9OWiQAx4&controls=0&autoplay=1&mute=1&modestbranding=1&loop=1"
+            title="Rolex Cosmograph Daytona"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div> -->
+    </main>
+    <section>
+      <div class="w-screen h-screen bg-blue-200"></div>
+    </section>
+    <!-- <img
+      src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwb439196f/images/large/637709294428332254-2160219.png?sw=2000&sh=2000&sm=fit&sfrm=png"
+      alt="Model wearing a watch"
+      width="1000"
+      class="mt-10 w-full"
+    /> -->
+    <!-- <span
         class="fa fa-bars text-4xl cursor-pointer"
         onclick="openNav()"
-      ></span>
-      <div id="mySidenav" class="sidenav font-bellefair">
-        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        > -->
+      ></span> -->
+    <!-- <div id="mySidenav" class="sidenav font-bellefair">
         <a class="closebtn font-archivo top-4 right-4" onclick="closeNav()"
           ><span class="fa fa-xmark cursor-pointer text-5xl"></span
         ></a>
@@ -113,14 +178,7 @@
             >20</span
           ></a
         >
-      </div>
-    </header>
-    <img
-      src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwb439196f/images/large/637709294428332254-2160219.png?sw=2000&sh=2000&sm=fit&sfrm=png"
-      alt="Model wearing a watch"
-      width="1000"
-      class="mt-10"
-    />
+      </div> -->
   </body>
   <script src="./js/index.js"></script>
 </html>
