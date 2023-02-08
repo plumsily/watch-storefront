@@ -24,7 +24,9 @@
 /******************************************
   /* BASE STYLES
   /*******************************************/
-
+html {
+  scroll-behavior: smooth;
+}
 body {
 }
 
@@ -138,7 +140,8 @@ footer {
   transition: transform 0.25s ease-out;
 }
 
-header {
+header,
+a {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 500ms;

@@ -27,9 +27,9 @@
   </head>
   <body class="bg-neutral-200 flex flex-col items-center overflow-x-hidden">
     <header
-      class="flex flex-col justify-between p-6 w-full h-full fixed text-lg font-semibold z-10"
+      class="flex flex-col justify-between w-full h-full fixed text-lg font-semibold z-10"
     >
-      <div class="flex justify-between w-full">
+      <div class="flex justify-between w-full p-6">
         <span
           class="text-4xl font-extrabold tracking-tighter font-archivo cursor-default"
         >
@@ -56,7 +56,9 @@
         </nav>
       </div>
 
-      <div class="flex justify-between w-full tracking-tight">
+      <div
+        class="flex justify-between w-full tracking-tight absolute bottom-0 left-0 p-6"
+      >
         <span
           class="font-archivo flex items-center gap-1 hover:-translate-y-1 transition-transform cursor-pointer dark-mode-btn"
           ><span class="fa fa-circle-half-stroke text-sm"></span> DARK
@@ -71,52 +73,39 @@
       <h1
         class="font-caudex text-8xl tracking-tighter font-semibold relative flex w-full h-full justify-center items-center"
       >
-        <div
-          class="pr-2 font-archivo bg-neutral-200 title-first w-full h-full flex items-center justify-end"
+        <section
+          class="pr-2 font-archivo bg-neutral-200 title-first -z-10 w-full h-full flex items-center justify-end"
         >
           <span>Capture</span>
-        </div>
-        <div
-          class="-z-10 absolute w-screen h-screen flex justify-center items-center"
+        </section>
+
+        <section
+          class="title-middle ml-[-1rem] text-white pb-1 -z-20 absolute w-screen h-screen flex justify-center items-center gap-5"
         >
-          <div class="title-middle ml-[-1rem] text-white pb-1">
-            <span class="italic">the</span> experience
-            <span class="italic">of </span>
-          </div>
-        </div>
-        <div
-          class="pl-2 font-archivo bg-neutral-200 title-last w-full h-full flex items-center"
+          <span class="italic">the</span> experience
+          <span class="italic">of </span>
+        </section>
+        <section
+          class="pl-2 font-archivo bg-neutral-200 title-last -z-10 w-full h-full flex items-center"
         >
           <span>Movement</span>
-        </div>
+        </section>
       </h1>
-      <div
-        class="overflow-hidden w-screen h-screen absolute top-0 left-0 -z-20 flex justify-center"
+      <section
+        class="overflow-hidden w-screen h-screen absolute top-0 left-0 -z-30 flex justify-center"
       >
-        <!-- <img
-          src="img/watch-promo-1-optimized.gif"
-          alt="Rolex Cosmograph Daytona"
-          class="object-fill -z-20 promo-gif"
-        /> -->
-        <video loop muted autoplay class="object-fill -z-20">
+        <video loop muted autoplay class="object-fill">
           <source src="img/watch-promo-1-long.mp4" type="video/mp4" />
         </video>
-      </div>
-      <!-- <div
-        class="overflow-hidden max-w-full w-screen h-screen absolute top-0 left-0 -z-20"
+      </section>
+      <a
+        href="#featured"
+        class="absolute bottom-0 text-center m-6 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:backdrop-blur-2xl hover:text-lime-300 hover:border-lime-300 z-10"
       >
-        <div class="frame-container">
-          <iframe
-            class=""
-            src="https://www.youtube.com/embed/l0D9OWiQAx4?playlist=l0D9OWiQAx4&controls=0&autoplay=1&mute=1&modestbranding=1&loop=1"
-            title="Rolex Cosmograph Daytona"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div> -->
+        Featured <span class="fa fa-arrow-down"></span>
+      </a>
     </main>
-    <section>
+    <section id="featured" name="featured">
       <div class="w-screen h-screen bg-blue-200"></div>
     </section>
     <!-- <img
