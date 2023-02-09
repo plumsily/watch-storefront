@@ -200,6 +200,18 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
-/* img {
-  height: 500px;
-} */
+form input,
+form textarea {
+  padding: 0.25rem;
+  border: 1px solid rgb(212 212 212);
+}
+
+form select,
+form option {
+  padding: 0.5rem;
+  border: 1px solid rgb(212 212 212);
+}
+
+form div {
+  gap: 0.25rem;
+}

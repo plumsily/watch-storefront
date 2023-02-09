@@ -115,15 +115,17 @@
     >
       <section class="flex justify-between px-24 py-24 gap-24">
         <section
-          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
+          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center items-center"
         >
-          <span class="flex flex-col items-center text-3xl gap-1">
-            <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
-            <span class="font-bold text-4xl">GRAND SEIKO</span
-            ><span class="font-semibold"
-              >Japan <span class="font-caudex">1960</span>
+          <div class="w-max p-32 border-[1px] border-black/50 rounded-[4rem]">
+            <span class="flex flex-col items-center text-3xl gap-2">
+              <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
+              <span class="font-bold text-4xl">GRAND SEIKO</span
+              ><span class="font-semibold text-xl"
+                >Japan <span class="font-caudex">1960</span>
+              </span>
             </span>
-          </span>
+          </div>
         </section>
         <article class="flex flex-col w-7/12 font-archivo text-lg gap-16">
           <p
@@ -324,7 +326,111 @@
         </a>
       </div>
     </section>
-    <section id="contact" class="w-full h-screen bg-neutral-50"></section>
+    <section
+      id="contact"
+      class="w-full bg-neutral-50 flex flex-col p-6 relative"
+    >
+      <section class="flex justify-between px-24 py-24 gap-24">
+        <section
+          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
+        >
+          <span class="flex flex-col items-center text-3xl gap-1">
+            <h4 class="text-lg uppercase font-semibold">
+              Have Questions? Call or Text Us
+            </h4>
+            <h4 class="text-xl capitalize font-semibold"></h4>
+            <span class="font-bold font-caudex text-4xl">(202) 555-0121</span>
+          </span>
+        </section>
+        <section class="flex flex-col w-7/12">
+          <form action="" class="w-3/4 flex flex-col font-archivo gap-4">
+            <section class="flex gap-6 w-full">
+              <div class="flex flex-col w-1/2">
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div class="flex flex-col w-1/2">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </section>
+            <section class="flex gap-6 w-full">
+              <div class="flex flex-col w-1/2">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="flex flex-col w-1/2">
+                <label for="pnumber">Phone</label>
+                <input type="tel" id="pnumber" name="pnumber" />
+              </div>
+            </section>
+            <div class="flex flex-col w-full">
+              <label for="request">Request Type*</label>
+              <select name="request" id="request" required>
+                <option value="discuss">Discuss New Purchase</option>
+                <option value="help">Help With Existing Order</option>
+                <option value="marketing">Marketing / PR</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="flex flex-col w-full">
+              <label for="order">Order #</label>
+              <input type="text" id="order" name="order" />
+            </div>
+            <div class="flex flex-col w-full">
+              <label for="desc">Description*</label>
+              <textarea
+                name="desc"
+                id="desc"
+                cols="50"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="flex w-5/6 self-center gap-20 px-20 font-archivo mb-24">
+        <section class="flex flex-col w-1/4 gap-2">
+          <span class="font-caudex text-2xl"
+            ><span class="fa fa-shield-heart text-neutral-600 mr-2"></span
+            >Authorized Retailer</span
+          >
+          <p class="text-neutral-500">
+            Official Authorized Dealer of over 40+ leading luxury brands.
+          </p>
+        </section>
+        <section class="flex flex-col w-1/4 gap-2">
+          <span class="font-caudex text-2xl"
+            ><span class="fa fa-headset text-neutral-600 mr-2"></span>Customer
+            Support</span
+          >
+          <p class="text-neutral-500">
+            Dedicated customer service staff ready to resolve any purchase or
+            product issues.
+          </p>
+        </section>
+        <section class="flex flex-col w-1/4 gap-2">
+          <span class="font-caudex text-2xl"
+            ><span class="fa fa-truck-ramp-box text-neutral-600 mr-2"></span
+            >Shipping + Returns</span
+          >
+          <p class="text-neutral-500">
+            Swift delivery and flexible return window of seven days.
+          </p>
+        </section>
+        <section class="flex flex-col w-1/4 gap-2">
+          <span class="font-caudex text-2xl"
+            ><span class="fa fa-gift text-neutral-600 mr-2"></span>Curated
+            Collection</span
+          >
+          <p class="text-neutral-500">
+            We work with leading luxury brands to provide the best selection for
+            discerning collectors.
+          </p>
+        </section>
+      </section>
+    </section>
   </body>
   <script src="./js/index.js"></script>
 </html>
