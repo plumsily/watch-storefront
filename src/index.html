@@ -46,7 +46,7 @@
             <li
               class="hover:-translate-y-1 transition-transform hover-underline-animation"
             >
-              <a href="#">CATALOG</a>
+              <a href="#catalog">CATALOG</a>
             </li>
             <li
               class="hover:-translate-y-1 transition-transform hover-underline-animation"
@@ -111,29 +111,21 @@
     <section
       id="featured"
       name="featured"
-      class="w-screen bg-blue-200 flex flex-col justify-between p-6"
+      class="w-screen bg-blue-200 flex flex-col justify-between p-6 relative"
     >
-      <section class="flex justify-between px-24 py-24">
+      <section class="flex justify-between px-24 py-24 gap-24">
         <section
-          class="flex gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase"
+          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
         >
-          <h2 class="text-2xl capitalize font-semibold">Featured Brand:</h2>
-          <span class="flex flex-col items-center text-2xl">
-            <span class="font-bold text-3xl">GRAND SEIKO</span
+          <span class="flex flex-col items-center text-3xl gap-1">
+            <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
+            <span class="font-bold text-4xl">GRAND SEIKO</span
             ><span class="font-semibold"
               >Japan <span class="font-caudex">1960</span>
             </span>
           </span>
         </section>
         <article class="flex flex-col w-7/12 font-archivo text-lg gap-16">
-          <section class="text-2xl tracking-tighter">
-            <span class="font-semibold">Movement Systems</span>
-            <ul class="font-light">
-              <li>Mechanical</li>
-              <li>Quartz</li>
-              <li>Spring Drive</li>
-            </ul>
-          </section>
           <p
             class="font-caudex text-4xl font-extrabold w-2/3 tracking-tight leading-snug"
           >
@@ -187,6 +179,17 @@
               </section>
             </section>
           </section>
+          <section class="text-2xl tracking-tighter flex flex-col">
+            <span
+              class="text-3xl font-semibold font-caudex underline decoration-2 underline-offset-2 mb-6"
+              >Movement Systems</span
+            >
+            <ul class="font-light tracking-tight">
+              <li>Mechanical</li>
+              <li>Quartz</li>
+              <li>Spring Drive</li>
+            </ul>
+          </section>
         </article>
       </section>
       <section class="flex w-full h-screen gap-6 pb-6">
@@ -226,71 +229,93 @@
           >
         </figure>
       </section>
+      <div class="w-full flex justify-center absolute bottom-0 left-0">
+        <a
+          href="#catalog"
+          class="text-center m-14 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
+        >
+          Catalog <span class="fa fa-arrow-down"></span>
+        </a>
+      </div>
     </section>
-    <section class="w-screen h-screen bg-neutral-800"></section>
-    <!-- <img
-      src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwb439196f/images/large/637709294428332254-2160219.png?sw=2000&sh=2000&sm=fit&sfrm=png"
-      alt="Model wearing a watch"
-      width="1000"
-      class="mt-10 w-full"
-    /> -->
-    <!-- <span
-        class="fa fa-bars text-4xl cursor-pointer"
-        onclick="openNav()"
-      ></span> -->
-    <!-- <div id="mySidenav" class="sidenav font-bellefair">
-        <a class="closebtn font-archivo top-4 right-4" onclick="closeNav()"
-          ><span class="fa fa-xmark cursor-pointer text-5xl"></span
-        ></a>
-        <a href="#" class="-translate-x-20"
-          >Rolex<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+    <section
+      id="catalog"
+      class="w-screen h-screen min-h-max p-32 bg-neutral-300 flex justify-center relative"
+    >
+      <div
+        class="font-archivo uppercase w-full flex flex-col justify-center items-center text-8xl tracking-tighter text-neutral-500 gap-2"
+      >
+        <a href="#catalog" class="transition-colors"
+          ><span class="">All Products</span
+          ><span class="text-3xl tracking-normal ml-4 font-caudex font-bold"
+            >89</span
+          ></a
+        >
+        <a
+          href="#catalog"
+          class="transition-colors -translate-x-60 flex items-baseline gap-4"
+        >
+          <span class="">Rolex</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
-        <a href="#" class="translate-x-10"
-          >Omega<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors -translate-x-32 flex items-baseline gap-4"
+          ><span>Omega</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
-        <a href="#" class="-translate-x-20"
-          >Patek Philippe<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors translate-x-24 flex items-baseline gap-4"
+          ><span>Patek Phillipe</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >04</span
           ></a
         >
-        <a href="#" class="translate-x-10"
-          >Breitling<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors -translate-x-72 flex items-baseline gap-4"
+          ><span>Breitling</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >15</span
           ></a
         >
-        <a href="#" class="-translate-x-20"
-          >Cartier<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors translate-x-60 flex items-baseline gap-4"
+          ><span>Cartier</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >10</span
           ></a
         >
-        <a href="#" class="translate-x-10"
-          >Hamilton<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors translate-x-12 flex items-baseline gap-4"
+          ><span>Hamilton</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >16</span
           ></a
         >
-        <a href="#" class="-translate-x-20"
-          >Jaeger-LeCoultre<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a href="#catalog" class="transition-colors flex items-baseline gap-4"
+          ><span>Jaeger-LeCoultre</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
-        <a href="#" class="translate-x-10"
-          >Grand Seiko<span
-            class="text-5xl tracking-normal ml-6 font-archivo font-bold"
+        <a
+          href="#catalog"
+          class="transition-colors -translate-x-10 flex items-baseline gap-4"
+          ><span>Grand Seiko</span
+          ><span class="text-3xl tracking-normal font-caudex font-bold"
             >20</span
           ></a
         >
-      </div> -->
+      </div>
+    </section>
   </body>
   <script src="./js/index.js"></script>
 </html>
