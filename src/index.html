@@ -27,20 +27,21 @@
   </head>
   <body class="bg-neutral-200 flex flex-col items-center overflow-x-hidden">
     <header
-      class="flex flex-col justify-between w-full h-full fixed text-lg font-semibold z-10"
+      class="flex flex-col justify-between w-full fixed text-lg font-semibold z-10"
     >
       <div class="flex justify-between w-full p-6">
-        <span
-          class="text-4xl font-extrabold tracking-tighter font-archivo cursor-default"
+        <a
+          href="#home"
+          class="text-4xl font-extrabold tracking-tighter font-archivo hover:-translate-y-1 hover:text-white hover:drop-shadow-xl transition-all"
         >
           MAINSPRING
-        </span>
+        </a>
         <nav>
           <ul class="flex gap-4 font-archivo tracking-tight">
             <li
               class="hover:-translate-y-1 transition-transform hover-underline-animation"
             >
-              <a href="#">FEATURED</a>
+              <a href="#featured">FEATURED</a>
             </li>
             <li
               class="hover:-translate-y-1 transition-transform hover-underline-animation"
@@ -55,21 +56,23 @@
           </ul>
         </nav>
       </div>
-
-      <div
-        class="flex justify-between w-full tracking-tight absolute bottom-0 left-0 p-6"
-      >
-        <span
-          class="font-archivo flex items-center gap-1 hover:-translate-y-1 transition-transform cursor-pointer dark-mode-btn"
-          ><span class="fa fa-circle-half-stroke text-sm"></span> DARK
-          MODE</span
-        >
-        <span class="font-archivo flex items-center gap-1"
-          ><span class="fa-regular fa-copyright text-sm"></span> 2022</span
-        >
-      </div>
     </header>
-    <main class="h-screen w-screen flex justify-center items-center relative">
+    <footer
+      class="text-lg font-semibold flex justify-between w-full tracking-tight fixed bottom-0 left-0 p-6 z-10"
+    >
+      <span
+        class="font-archivo flex items-center gap-1 hover:-translate-y-1 transition-transform cursor-pointer dark-mode-btn"
+        ><span class="fa fa-circle-half-stroke text-sm"></span> DARK/LIGHT
+        MODE</span
+      >
+      <span class="font-archivo flex items-center gap-1"
+        ><span class="fa-regular fa-copyright text-sm"></span> 2022</span
+      >
+    </footer>
+    <main
+      id="home"
+      class="h-screen w-screen flex justify-center items-center relative"
+    >
       <h1
         class="font-caudex text-8xl tracking-tighter font-semibold relative flex w-full h-full justify-center items-center"
       >
@@ -100,14 +103,131 @@
       </section>
       <a
         href="#featured"
-        class="absolute bottom-0 text-center m-6 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:backdrop-blur-2xl hover:text-lime-300 hover:border-lime-300 z-10"
+        class="featured-btn absolute bottom-0 text-center m-6 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
       >
         Featured <span class="fa fa-arrow-down"></span>
       </a>
     </main>
-    <section id="featured" name="featured">
-      <div class="w-screen h-screen bg-blue-200"></div>
+    <section
+      id="featured"
+      name="featured"
+      class="w-screen bg-blue-200 flex flex-col justify-between p-6"
+    >
+      <section class="flex justify-between px-24 py-24">
+        <section
+          class="flex gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase"
+        >
+          <h2 class="text-2xl capitalize font-semibold">Featured Brand:</h2>
+          <span class="flex flex-col items-center text-2xl">
+            <span class="font-bold text-3xl">GRAND SEIKO</span
+            ><span class="font-semibold"
+              >Japan <span class="font-caudex">1960</span>
+            </span>
+          </span>
+        </section>
+        <article class="flex flex-col w-7/12 font-archivo text-lg gap-16">
+          <section class="text-2xl tracking-tighter">
+            <span class="font-semibold">Movement Systems</span>
+            <ul class="font-light">
+              <li>Mechanical</li>
+              <li>Quartz</li>
+              <li>Spring Drive</li>
+            </ul>
+          </section>
+          <p
+            class="font-caudex text-4xl font-extrabold w-2/3 tracking-tight leading-snug"
+          >
+            Heard of Toyota and Lexus? What you might not know is that the same
+            company owns them. Lexus vehicles are much
+            <span class="font-archivo italic">more powerful and luxurious</span
+            >. Put simply, think of Seiko as a Toyota and Grand Seiko as a
+            Lexus.
+          </p>
+          <section class="flex flex-col gap-6 w-5/6">
+            <h3
+              class="text-3xl font-semibold tracking-tighter font-caudex underline decoration-2 underline-offset-2"
+            >
+              History
+            </h3>
+            <section class="flex gap-16">
+              <section class="flex flex-col gap-6">
+                <p>
+                  Prior to 1960, to challenge the status of Swiss watches and
+                  change the perception of Japanese watches, Seiko began the
+                  discussion of a product line that can match the quality of
+                  Swiss watches.
+                </p>
+                <p>
+                  The first Grand Seiko, released in 1960, was based on Seiko's
+                  previous high-end watch, CROWN. This Grand Seiko has a
+                  25-jewel, manual-winding, 3180 caliber, and its production was
+                  limited to 36,000 units. The watch was also the first
+                  chronometer-grade watch manufactured in Japan and was based on
+                  Seiko's own chronometer standard.
+                </p>
+              </section>
+              <section class="flex flex-col gap-6">
+                <p>
+                  Some Grand Seiko timepieces also incorporate the company's
+                  Spring Drive movement, a movement that is a combination of
+                  both automatic and quartz timekeeping methods, leading to
+                  unparalleled accuracy in the world of automatic wristwatches.
+                  The most famous example is the SBGA011 Grand Seiko
+                  "Snowflake", housing the 9R Spring Drive movement.
+                </p>
+
+                <p>
+                  With the repositioning of Grand Seiko from a Seiko subbrand to
+                  an independent brand in 2017, Grand Seiko aimed to transition
+                  to a true luxury brand. In 2022, 'Kodo Constant-Force
+                  Tourbillon SLGT 003', featuring the world's first combination
+                  tourbillon and constant-force mechanism on the same axis, was
+                  released, priced at 370,000 euros.
+                </p>
+              </section>
+            </section>
+          </section>
+        </article>
+      </section>
+      <section class="flex w-full h-screen gap-6 pb-6">
+        <figure class="w-1/2 h-full relative">
+          <img
+            src="img/Grand_Seiko_Omiwatari_Spring_Drive_SBGY007G_LS.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute bottom-0 right-0 px-2 font-archivo text-white font-semibold uppercase"
+            >SBGY007 - Omiwatari</span
+          >
+        </figure>
+        <figure class="w-1/2 h-full relative">
+          <img
+            src="img/02_GS_2021SS_SBGA375_sp.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute bottom-0 right-0 px-2 font-archivo text-white font-medium uppercase"
+            >SBG375 - Heritage</span
+          >
+        </figure>
+      </section>
+      <section class="flex w-full h-screen">
+        <figure class="w-full h-full relative">
+          <img
+            src="img/snowflake-2.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute bottom-0 right-0 px-2 font-archivo text-white font-medium uppercase"
+            >SBGA211 - Snowflake</span
+          >
+        </figure>
+      </section>
     </section>
+    <section class="w-screen h-screen bg-neutral-800"></section>
     <!-- <img
       src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwb439196f/images/large/637709294428332254-2160219.png?sw=2000&sh=2000&sm=fit&sfrm=png"
       alt="Model wearing a watch"

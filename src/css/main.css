@@ -141,7 +141,8 @@ footer {
 }
 
 header,
-a {
+footer,
+.featured-btn {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 500ms;
@@ -263,3 +264,7 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* img {
+  height: 500px;
+} */
