@@ -117,7 +117,7 @@
         <section
           class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center items-center"
         >
-          <div class="w-max p-32 border-[1px] border-black/50 rounded-[4rem]">
+          <div class="w-max p-32 border-2 border-black/30 rounded-[4rem]">
             <span class="flex flex-col items-center text-3xl gap-2">
               <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
               <span class="font-bold text-4xl">GRAND SEIKO</span
@@ -242,7 +242,7 @@
     </section>
     <section
       id="catalog"
-      class="w-screen h-screen min-h-max p-32 bg-neutral-300 flex justify-center relative"
+      class="w-screen min-h-screen max-h-max p-32 bg-neutral-300 flex justify-center relative"
     >
       <div
         class="font-archivo uppercase w-full flex flex-col justify-center items-center text-8xl tracking-tighter text-neutral-500 gap-2"
@@ -328,7 +328,7 @@
     </section>
     <section
       id="contact"
-      class="w-full bg-neutral-50 flex flex-col p-6 relative"
+      class="w-full min-h-screen bg-neutral-50 flex flex-col p-6 relative justify-center"
     >
       <section class="flex justify-between px-24 py-24 gap-24">
         <section
@@ -390,9 +390,10 @@
           </form>
         </section>
       </section>
-      <section class="flex w-5/6 self-center gap-20 px-20 font-archivo mb-24">
-        <section class="flex flex-col w-1/4 gap-2">
-          <span class="font-caudex text-2xl"
+      <section class="flex w-5/6 self-center gap-20 p-24 font-archivo">
+        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+          <span
+            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-shield-heart text-neutral-600 mr-2"></span
             >Authorized Retailer</span
           >
@@ -400,8 +401,9 @@
             Official Authorized Dealer of over 40+ leading luxury brands.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-2">
-          <span class="font-caudex text-2xl"
+        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+          <span
+            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-headset text-neutral-600 mr-2"></span>Customer
             Support</span
           >
@@ -410,8 +412,9 @@
             product issues.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-2">
-          <span class="font-caudex text-2xl"
+        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+          <span
+            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-truck-ramp-box text-neutral-600 mr-2"></span
             >Shipping + Returns</span
           >
@@ -419,8 +422,9 @@
             Swift delivery and flexible return window of seven days.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-2">
-          <span class="font-caudex text-2xl"
+        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+          <span
+            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-gift text-neutral-600 mr-2"></span>Curated
             Collection</span
           >
@@ -429,6 +433,42 @@
             discerning collectors.
           </p>
         </section>
+      </section>
+    </section>
+    <section id="links" class="flex w-full p-6 justify-between">
+      <section class="flex flex-col gap-4 w-1/4">
+        <span>SHOP</span>
+        <ul>
+          <li>Watches</li>
+          <li>New Releases</li>
+          <li>Straps</li>
+          <li>Tools & Accessories</li>
+          <li>Gift Card</li>
+        </ul>
+      </section>
+      <section class="flex flex-col gap-4 w-1/4">
+        <span>ABOUT</span>
+        <ul>
+          <li>Contact Us</li>
+          <li>Shipping & Returns</li>
+          <li>Log In to Account</li>
+          <li>Financing</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Refund Policy</li>
+          <li>(202) 555-0121</li>
+        </ul>
+      </section>
+      <section class="flex flex-col gap-2 w-2/4">
+        <h6>Join Our Newsletter</h6>
+        <p>
+          Receive our weekly written content, exclusively for our email
+          subscribers.
+        </p>
+        <form action="">
+          <label for="newsletter">Enter your email address</label>
+          <input type="email" name="newsletter" />
+        </form>
       </section>
     </section>
   </body>
