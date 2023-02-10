@@ -435,10 +435,13 @@
         </section>
       </section>
     </section>
-    <section id="links" class="flex w-full p-6 justify-between">
-      <section class="flex flex-col gap-4 w-1/4">
-        <span>SHOP</span>
-        <ul>
+    <section
+      id="links"
+      class="flex w-full p-12 justify-between font-archivo mb-20"
+    >
+      <section class="flex flex-col gap-4 w-1/6">
+        <span class="font-semibold">SHOP</span>
+        <ul class="flex flex-col gap-1 text-neutral-600">
           <li>Watches</li>
           <li>New Releases</li>
           <li>Straps</li>
@@ -446,9 +449,9 @@
           <li>Gift Card</li>
         </ul>
       </section>
-      <section class="flex flex-col gap-4 w-1/4">
-        <span>ABOUT</span>
-        <ul>
+      <section class="flex flex-col gap-4 w-1/6">
+        <span class="font-semibold">ABOUT</span>
+        <ul class="flex flex-col gap-1 text-neutral-600">
           <li>Contact Us</li>
           <li>Shipping & Returns</li>
           <li>Log In to Account</li>
@@ -459,16 +462,33 @@
           <li>(202) 555-0121</li>
         </ul>
       </section>
-      <section class="flex flex-col gap-2 w-2/4">
-        <h6>Join Our Newsletter</h6>
-        <p>
+      <section class="flex flex-col gap-4 w-1/6">
+        <span class="font-semibold">FOLLOW US</span>
+        <ul class="flex flex-col gap-1 text-neutral-600">
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </section>
+      <section class="flex flex-col gap-4 w-3/6">
+        <h6 class="uppercase font-semibold">Join Our Newsletter</h6>
+        <p class="text-neutral-600">
           Receive our weekly written content, exclusively for our email
           subscribers.
         </p>
-        <form action="">
-          <label for="newsletter">Enter your email address</label>
+        <form action="" class="flex flex-col gap-2">
+          <label for="newsletter" class="text-neutral-600"
+            >Enter your email address*</label
+          >
           <input type="email" name="newsletter" />
         </form>
+        <span class="text-neutral-600"
+          >By registering you agree to accept the terms & conditions and have
+          read the privacy policy.</span
+        >
+        <span
+          class="cursor-pointer hover:bg-black hover:text-white hover:border-black transition-colors uppercase text-center p-2 border-[1px] border-neutral-400"
+          >Sign Up</span
+        >
       </section>
     </section>
   </body>
