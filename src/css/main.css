@@ -225,3 +225,131 @@ form div {
 #links input {
   background-color: transparent;
 }
+
+.reveal {
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  overflow: hidden;
+  /* opacity: 1; */
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease 0s 1 normal forwards,
+    fade 1s ease 0s 1 normal forwards;
+  /* animation: fade-bottom 1s ease, fade 1s ease; */
+}
+.active.fade-bottom-delay {
+  animation: fade-bottom 1s ease 100ms 1 normal forwards,
+    fade 1s ease 100ms 1 normal forwards;
+  /* animation: fade-bottom-delay 1.1s ease, fade-delay 1s ease; */
+}
+
+#catalog .reveal.fade-bottom:nth-child(1) {
+  animation-delay: 0ms;
+}
+#catalog .reveal.fade-bottom:nth-child(2) {
+  animation-delay: 0ms;
+}
+#catalog .reveal.fade-bottom:nth-child(3) {
+  animation-delay: 100ms;
+}
+#catalog .reveal.fade-bottom:nth-child(4) {
+  animation-delay: 100ms;
+}
+#catalog .reveal.fade-bottom:nth-child(5) {
+  animation-delay: 200ms;
+}
+#catalog .reveal.fade-bottom:nth-child(6) {
+  animation-delay: 200ms;
+}
+#catalog .reveal.fade-bottom:nth-child(7) {
+  animation-delay: 300ms;
+}
+#catalog .reveal.fade-bottom:nth-child(8) {
+  animation-delay: 300ms;
+}
+#catalog .reveal.fade-bottom:nth-child(9) {
+  animation-delay: 400ms;
+}
+#catalog .reveal.fade-bottom:nth-child(10) {
+  animation-delay: 400ms;
+}
+#catalog .reveal.fade-bottom:nth-child(11) {
+  animation-delay: 500ms;
+}
+#catalog .reveal.fade-bottom:nth-child(12) {
+  animation-delay: 500ms;
+}
+#catalog .reveal.fade-bottom:nth-child(13) {
+  animation-delay: 600ms;
+}
+#catalog .reveal.fade-bottom:nth-child(14) {
+  animation-delay: 600ms;
+}
+#catalog .reveal.fade-bottom:nth-child(15) {
+  animation-delay: 700ms;
+}
+#catalog .reveal.fade-bottom:nth-child(16) {
+  animation-delay: 700ms;
+}
+#catalog .reveal.fade-bottom:nth-child(17) {
+  animation-delay: 800ms;
+}
+#catalog .reveal.fade-bottom:nth-child(18) {
+  animation-delay: 800ms;
+}
+
+.icons .reveal.fade-bottom:nth-child(1) {
+  animation-delay: 0ms;
+}
+.icons .reveal.fade-bottom:nth-child(2) {
+  animation-delay: 100ms;
+}
+.icons .reveal.fade-bottom:nth-child(3) {
+  animation-delay: 200ms;
+}
+.icons .reveal.fade-bottom:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom-delay {
+  0%,
+  10% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-delay {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

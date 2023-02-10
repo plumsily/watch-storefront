@@ -1,11 +1,17 @@
-// /* Set the width of the side navigation to 250px */
-// function openNav() {
-//   //   document.getElementById("mySidenav").style.width = "50%";
-//   document.getElementById("mySidenav").style.transform = "translate(-100%,0)";
-// }
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
 
-// /* Set the width of the side navigation to 0 */
-// function closeNav() {
-//   //   document.getElementById("mySidenav").style.width = "0";
-//   document.getElementById("mySidenav").style.transform = "translate(100%,0)";
-// }
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = -50;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+reveal();

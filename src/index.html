@@ -22,8 +22,6 @@
     <!-- <link rel="stylesheet" href="/src/css/main.css" /> -->
     <link rel="stylesheet" href="/src/css/normalize.css" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body class="bg-neutral-200 flex flex-col items-center overflow-x-hidden">
     <header
@@ -117,7 +115,9 @@
         <section
           class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center items-center"
         >
-          <div class="w-max p-32 border-2 border-black/30 rounded-[4rem]">
+          <div
+            class="reveal fade-bottom-delay w-max p-32 border-2 border-black/30 rounded-[4rem]"
+          >
             <span class="flex flex-col items-center text-3xl gap-2">
               <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
               <span class="font-bold text-4xl">GRAND SEIKO</span
@@ -127,9 +127,11 @@
             </span>
           </div>
         </section>
-        <article class="flex flex-col w-7/12 font-archivo text-lg gap-16">
+        <article
+          class="flex flex-col w-7/12 font-archivo text-lg gap-16 featured-article"
+        >
           <p
-            class="font-caudex text-4xl font-extrabold w-2/3 tracking-tight leading-snug"
+            class="reveal fade-bottom font-caudex text-4xl font-extrabold w-2/3 tracking-tight leading-snug"
           >
             Heard of Toyota and Lexus? What you might not know is that the same
             company owns them. Lexus vehicles are much
@@ -139,19 +141,19 @@
           </p>
           <section class="flex flex-col gap-6 w-5/6">
             <h3
-              class="text-3xl font-semibold tracking-tighter font-caudex underline decoration-2 underline-offset-2"
+              class="reveal fade-bottom featured-header text-3xl font-semibold tracking-tighter font-caudex underline decoration-2 underline-offset-2"
             >
               History
             </h3>
             <section class="flex gap-16">
               <section class="flex flex-col gap-6">
-                <p>
+                <p class="reveal fade-bottom">
                   Prior to 1960, to challenge the status of Swiss watches and
                   change the perception of Japanese watches, Seiko began the
                   discussion of a product line that can match the quality of
                   Swiss watches.
                 </p>
-                <p>
+                <p class="reveal fade-bottom">
                   The first Grand Seiko, released in 1960, was based on Seiko's
                   previous high-end watch, CROWN. This Grand Seiko has a
                   25-jewel, manual-winding, 3180 caliber, and its production was
@@ -161,7 +163,7 @@
                 </p>
               </section>
               <section class="flex flex-col gap-6">
-                <p>
+                <p class="reveal fade-bottom">
                   Some Grand Seiko timepieces also incorporate the company's
                   Spring Drive movement, a movement that is a combination of
                   both automatic and quartz timekeeping methods, leading to
@@ -170,7 +172,7 @@
                   "Snowflake", housing the 9R Spring Drive movement.
                 </p>
 
-                <p>
+                <p class="reveal fade-bottom">
                   With the repositioning of Grand Seiko from a Seiko subbrand to
                   an independent brand in 2017, Grand Seiko aimed to transition
                   to a true luxury brand. In 2022, 'Kodo Constant-Force
@@ -183,10 +185,10 @@
           </section>
           <section class="text-2xl tracking-tighter flex flex-col">
             <span
-              class="text-3xl font-semibold font-caudex underline decoration-2 underline-offset-2 mb-6"
+              class="reveal fade-bottom text-3xl font-semibold font-caudex underline decoration-2 underline-offset-2 mb-6"
               >Movement Systems</span
             >
-            <ul class="text-xl font-light tracking-tight">
+            <ul class="reveal fade-bottom text-xl font-light tracking-tight">
               <li>Mechanical</li>
               <li>Quartz</li>
               <li>Spring Drive</li>
@@ -195,7 +197,7 @@
         </article>
       </section>
       <section class="flex w-full h-screen gap-6 pb-6">
-        <figure class="w-1/2 h-full relative">
+        <figure class="reveal fade-bottom w-1/2 h-full relative">
           <img
             src="img/Grand_Seiko_Omiwatari_Spring_Drive_SBGY007G_LS.jpg"
             alt=""
@@ -206,7 +208,7 @@
             >SBGY007 - Omiwatari</span
           >
         </figure>
-        <figure class="w-1/2 h-full relative">
+        <figure class="reveal fade-bottom-delay w-1/2 h-full relative">
           <img
             src="img/02_GS_2021SS_SBGA375_sp.jpg"
             alt=""
@@ -219,7 +221,7 @@
         </figure>
       </section>
       <section class="flex w-full h-screen">
-        <figure class="w-full h-full relative">
+        <figure class="reveal fade-bottom w-full h-full relative">
           <img
             src="img/snowflake-2.png"
             alt=""
@@ -247,9 +249,10 @@
       <div
         class="font-archivo uppercase w-full flex flex-col justify-center items-center text-8xl tracking-tighter text-neutral-500 gap-2"
       >
-        <a href="#catalog" class="transition-colors"
-          ><span class="">All Products</span
-          ><span class="text-3xl tracking-normal ml-4 font-caudex font-bold"
+        <a href="#catalog" class="transition-colors flex items-baseline gap-4"
+          ><span class="reveal fade-bottom">All Products</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal ml-4 font-caudex font-bold"
             >89</span
           ></a
         >
@@ -257,62 +260,70 @@
           href="#catalog"
           class="transition-colors -translate-x-60 flex items-baseline gap-4"
         >
-          <span class="">Rolex</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          <span class="reveal fade-bottom">Rolex</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors -translate-x-32 flex items-baseline gap-4"
-          ><span>Omega</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Omega</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors translate-x-24 flex items-baseline gap-4"
-          ><span>Patek Phillipe</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Patek Phillipe</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >04</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors -translate-x-72 flex items-baseline gap-4"
-          ><span>Breitling</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Breitling</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >15</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors translate-x-60 flex items-baseline gap-4"
-          ><span>Cartier</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Cartier</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >10</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors translate-x-12 flex items-baseline gap-4"
-          ><span>Hamilton</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Hamilton</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >16</span
           ></a
         >
         <a href="#catalog" class="transition-colors flex items-baseline gap-4"
-          ><span>Jaeger-LeCoultre</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Jaeger-LeCoultre</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
           class="transition-colors -translate-x-10 flex items-baseline gap-4"
-          ><span>Grand Seiko</span
-          ><span class="text-3xl tracking-normal font-caudex font-bold"
+          ><span class="reveal fade-bottom">Grand Seiko</span
+          ><span
+            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
             >20</span
           ></a
         >
@@ -334,7 +345,9 @@
         <section
           class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
         >
-          <span class="flex flex-col items-center text-3xl gap-1">
+          <span
+            class="reveal fade-bottom-delay flex flex-col items-center text-3xl gap-1"
+          >
             <h4 class="text-lg uppercase font-semibold">
               Have Questions? Call or Text Us
             </h4>
@@ -345,26 +358,26 @@
         <section class="flex flex-col w-7/12">
           <form action="" class="w-3/4 flex flex-col font-archivo gap-4">
             <section class="flex gap-6 w-full">
-              <div class="flex flex-col w-1/2">
+              <div class="reveal fade-bottom flex flex-col w-1/2">
                 <label for="fname">First Name*</label>
                 <input type="text" id="fname" name="fname" required />
               </div>
-              <div class="flex flex-col w-1/2">
+              <div class="reveal fade-bottom flex flex-col w-1/2">
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lname" />
               </div>
             </section>
             <section class="flex gap-6 w-full">
-              <div class="flex flex-col w-1/2">
+              <div class="reveal fade-bottom flex flex-col w-1/2">
                 <label for="email">Email Address*</label>
                 <input type="email" id="email" name="email" required />
               </div>
-              <div class="flex flex-col w-1/2">
+              <div class="reveal fade-bottom flex flex-col w-1/2">
                 <label for="pnumber">Phone</label>
                 <input type="tel" id="pnumber" name="pnumber" />
               </div>
             </section>
-            <div class="flex flex-col w-full">
+            <div class="reveal fade-bottom flex flex-col w-full">
               <label for="request">Request Type*</label>
               <select name="request" id="request" required>
                 <option value="discuss">Discuss New Purchase</option>
@@ -373,11 +386,11 @@
                 <option value="general">General Inquiry</option>
               </select>
             </div>
-            <div class="flex flex-col w-full">
+            <div class="reveal fade-bottom flex flex-col w-full">
               <label for="order">Order #</label>
               <input type="text" id="order" name="order" />
             </div>
-            <div class="flex flex-col w-full">
+            <div class="reveal fade-bottom flex flex-col w-full">
               <label for="desc">Description*</label>
               <textarea
                 name="desc"
@@ -390,8 +403,10 @@
           </form>
         </section>
       </section>
-      <section class="flex w-5/6 self-center gap-20 p-24 font-archivo">
-        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+      <section class="icons flex w-5/6 self-center gap-20 p-24 font-archivo">
+        <section
+          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+        >
           <span
             class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-shield-heart text-neutral-600 mr-2"></span
@@ -401,7 +416,9 @@
             Official Authorized Dealer of over 40+ leading luxury brands.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+        <section
+          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+        >
           <span
             class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-headset text-neutral-600 mr-2"></span>Customer
@@ -412,7 +429,9 @@
             product issues.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+        <section
+          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+        >
           <span
             class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-truck-ramp-box text-neutral-600 mr-2"></span
@@ -422,7 +441,9 @@
             Swift delivery and flexible return window of seven days.
           </p>
         </section>
-        <section class="flex flex-col w-1/4 gap-6 items-center text-center">
+        <section
+          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+        >
           <span
             class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full z-10"
             ><span class="fa fa-gift text-neutral-600 mr-2"></span>Curated
@@ -437,7 +458,7 @@
     </section>
     <section
       id="links"
-      class="flex w-full p-12 justify-between font-archivo mb-20"
+      class="flex w-3/4 p-12 justify-between font-archivo mb-20"
     >
       <section class="flex flex-col gap-4 w-1/6">
         <span class="font-semibold">SHOP</span>
@@ -486,11 +507,11 @@
           read the privacy policy.</span
         >
         <span
-          class="cursor-pointer hover:bg-black hover:text-white hover:border-black transition-colors uppercase text-center p-2 border-[1px] border-neutral-400"
+          class="cursor-pointer hover:bg-black hover:text-white hover:border-black transition-colors uppercase text-center p-2 border-[1px] border-neutral-400 text-sm"
           >Sign Up</span
         >
       </section>
     </section>
+    <script src="js/index.js"></script>
   </body>
-  <script src="./js/index.js"></script>
 </html>
