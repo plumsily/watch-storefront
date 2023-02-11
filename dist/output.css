@@ -795,6 +795,10 @@ video {
   padding: 5.5vw;
 }
 
+.p-\[25\%\] {
+  padding: 25%;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -959,10 +963,6 @@ video {
 
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .transition {
@@ -1390,7 +1390,8 @@ form div {
   }
 }
 
-input {
+input,
+select {
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -1503,10 +1504,6 @@ input {
     display: inline-block;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:h-\[500px\] {
     height: 500px;
   }
@@ -1548,10 +1545,6 @@ input {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:opacity-100 {
-    opacity: 1;
   }
 }
 
