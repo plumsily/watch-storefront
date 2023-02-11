@@ -795,10 +795,6 @@ video {
   padding: 5.5vw;
 }
 
-.p-\[25\%\] {
-  padding: 25%;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1018,6 +1014,10 @@ video {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /******************************************
