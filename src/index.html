@@ -35,7 +35,9 @@
           MAINSPRING
         </a>
         <nav>
-          <ul class="flex gap-4 font-archivo tracking-tight">
+          <ul
+            class="opacity-0 sm:opacity-100 flex gap-4 font-archivo tracking-tight"
+          >
             <li
               class="hover:-translate-y-1 transition-transform hover-underline-animation"
             >
@@ -73,22 +75,24 @@
       class="h-screen w-screen flex justify-center items-center relative"
     >
       <h1
-        class="font-caudex text-8xl tracking-tighter font-semibold relative flex w-full h-full justify-center items-center"
+        class="font-caudex text-[4.7vw] tracking-tighter font-semibold relative flex w-full h-full justify-center items-center"
       >
         <section
-          class="pr-2 font-archivo bg-neutral-200 dark:bg-neutral-900 dark:text-white title-first -z-10 w-full h-full flex items-center justify-end"
+          class="pr-3 font-archivo bg-neutral-200 dark:bg-neutral-900 dark:text-white title-first -z-10 w-1/2 h-full flex items-center justify-end"
         >
           <span>Capture</span>
         </section>
 
         <section
-          class="title-middle ml-[-1rem] text-white pb-1 -z-20 absolute w-screen h-screen flex justify-center items-center gap-5"
+          class="title-middle text-[4.7vw] translate-x-[-0.6rem] text-white pb-1 -z-20 absolute w-[33.3333%] h-screen flex justify-center items-center"
         >
-          <span class="italic">the</span> experience
-          <span class="italic">of </span>
+          <span
+            ><span class="italic">the</span> experience
+            <span class="italic">of </span></span
+          >
         </section>
         <section
-          class="pl-2 font-archivo bg-neutral-200 dark:bg-neutral-900 dark:text-white title-last -z-10 w-full h-full flex items-center"
+          class="pl-2 font-archivo text-[4.7vw] bg-neutral-200 dark:bg-neutral-900 dark:text-white title-last -z-10 w-1/2 h-full flex items-center"
         >
           <span>Movement</span>
         </section>
@@ -96,13 +100,13 @@
       <section
         class="overflow-hidden w-screen h-screen absolute top-0 left-0 -z-30 flex justify-center"
       >
-        <video loop muted autoplay class="object-fill">
+        <video loop muted autoplay class="object-cover">
           <source src="img/watch-promo-1-long.mp4" type="video/mp4" />
         </video>
       </section>
       <a
         href="#featured"
-        class="featured-btn absolute bottom-0 text-center m-6 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
+        class="featured-btn absolute bottom-0 text-center m-6 py-3 px-5 font-archivo text-base lg:text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
       >
         Featured <span class="fa fa-arrow-down"></span>
       </a>
@@ -112,27 +116,31 @@
       name="featured"
       class="w-screen bg-blue-200 dark:bg-neutral-800 dark:text-blue-200 flex flex-col justify-between p-6 relative"
     >
-      <section class="flex justify-between px-24 py-24 gap-24">
+      <section
+        class="flex flex-col lg:flex-row justify-between p-6 sm:p-10 md:p-20 2xl:p-24 gap-24"
+      >
         <section
-          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center items-center"
+          class="flex flex-col gap-4 lg:w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center items-center"
         >
           <div
-            class="reveal fade-bottom-delay w-max p-32 border-2 border-black/30 rounded-[4rem] dark:border-blue-200"
+            class="reveal fade-bottom-delay w-max p-[5.5vw] border-2 border-black/30 rounded-[3vw] dark:border-blue-200"
           >
-            <span class="flex flex-col items-center text-3xl gap-2">
-              <h2 class="text-xl capitalize font-semibold">Featured Brand</h2>
-              <span class="font-bold text-4xl">GRAND SEIKO</span
-              ><span class="font-semibold text-xl"
+            <span class="flex flex-col items-center text-3xl sm:gap-1 md:gap-2">
+              <h2 class="text-lg 2xl:text-xl capitalize font-semibold">
+                Featured Brand
+              </h2>
+              <span class="font-bold text-3xl 2xl:text-4xl">GRAND SEIKO</span
+              ><span class="font-semibold text-lg 2xl:text-xl"
                 >Japan <span class="font-caudex">1960</span>
               </span>
             </span>
           </div>
         </section>
         <article
-          class="flex flex-col w-7/12 font-archivo text-lg gap-16 featured-article"
+          class="flex flex-col lg:w-7/12 font-archivo xl:text-base 2xl:text-lg gap-16 featured-article"
         >
           <p
-            class="reveal fade-bottom font-caudex text-4xl font-extrabold w-2/3 tracking-tight leading-snug"
+            class="reveal fade-bottom font-caudex text-3xl 2xl:text-4xl font-extrabold xl:3/4 2xl:w-2/3 tracking-tight xl:leading-normal 2xl:leading-snug"
           >
             Heard of Toyota and Lexus? What you might not know is that the same
             company owns them. Lexus vehicles are much
@@ -140,13 +148,13 @@
             >. Put simply, think of Seiko as a Toyota and Grand Seiko as a
             Lexus.
           </p>
-          <section class="flex flex-col gap-6 w-5/6">
+          <section class="flex flex-col gap-6 xl:w-full 2xl:w-5/6">
             <h3
-              class="reveal fade-bottom featured-header text-3xl font-semibold tracking-tighter font-caudex underline decoration-2 underline-offset-2"
+              class="reveal fade-bottom featured-header text-2xl 2xl:text-3xl font-semibold tracking-tighter font-caudex underline decoration-2 underline-offset-2"
             >
               History
             </h3>
-            <section class="flex gap-16">
+            <section class="flex flex-col sm:flex-row gap-16">
               <section class="flex flex-col gap-6">
                 <p class="reveal fade-bottom">
                   Prior to 1960, to challenge the status of Swiss watches and
@@ -184,9 +192,11 @@
               </section>
             </section>
           </section>
-          <section class="text-2xl tracking-tighter flex flex-col">
+          <section
+            class="xl:text-xl 2xl:text-2xl tracking-tighter flex flex-col"
+          >
             <span
-              class="reveal fade-bottom text-3xl font-semibold font-caudex underline decoration-2 underline-offset-2 mb-6"
+              class="reveal fade-bottom text-2xl 2xl:text-3xl font-semibold font-caudex underline decoration-2 underline-offset-2 mb-6"
               >Movement Systems</span
             >
             <ul class="reveal fade-bottom text-xl font-light tracking-tight">
@@ -197,8 +207,10 @@
           </section>
         </article>
       </section>
-      <section class="flex w-full h-screen gap-6 pb-6">
-        <figure class="reveal fade-bottom w-1/2 h-full relative">
+      <section
+        class="flex flex-col sm:flex-row w-full sm:h-[500px] lg:h-screen gap-6 pb-6"
+      >
+        <figure class="reveal fade-bottom w-full sm:w-1/2 h-full relative">
           <img
             src="img/Grand_Seiko_Omiwatari_Spring_Drive_SBGY007G_LS.jpg"
             alt=""
@@ -209,7 +221,9 @@
             >SBGY007 - Omiwatari</span
           >
         </figure>
-        <figure class="reveal fade-bottom-delay w-1/2 h-full relative">
+        <figure
+          class="reveal fade-bottom-delay w-full sm:w-1/2 h-full relative"
+        >
           <img
             src="img/02_GS_2021SS_SBGA375_sp.jpg"
             alt=""
@@ -221,7 +235,7 @@
           >
         </figure>
       </section>
-      <section class="flex w-full h-screen">
+      <section class="flex w-full sm:h-[500px] lg:h-screen">
         <figure class="reveal fade-bottom w-full h-full relative">
           <img
             src="img/snowflake-2.png"
@@ -237,7 +251,7 @@
       <div class="w-full flex justify-center absolute bottom-0 left-0">
         <a
           href="#catalog"
-          class="text-center m-14 py-3 px-5 font-archivo text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
+          class="text-center m-14 py-3 px-5 font-archivo text-base lg:text-lg font-semibold text-white border-2 border-white rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
         >
           Catalog <span class="fa fa-arrow-down"></span>
         </a>
@@ -245,86 +259,86 @@
     </section>
     <section
       id="catalog"
-      class="w-screen min-h-screen max-h-max p-32 bg-neutral-300 dark:bg-neutral-900 flex justify-center relative"
+      class="w-screen min-h-screen max-h-max sm:p-20 md:p-32 bg-neutral-300 dark:bg-neutral-900 flex justify-center relative"
     >
       <div
-        class="font-archivo uppercase w-full flex flex-col justify-center items-center text-8xl tracking-tighter text-neutral-500 gap-2"
+        class="font-archivo uppercase w-full flex flex-col justify-center items-center text-2xl sm:text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl tracking-tighter text-neutral-500 gap-2"
       >
         <a href="#catalog" class="transition-colors flex items-baseline gap-4"
           ><span class="reveal fade-bottom">All Products</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal ml-4 font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal ml-4 font-caudex font-bold"
             >89</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors -translate-x-60 flex items-baseline gap-4"
+          class="transition-colors md:-translate-x-60 flex items-baseline gap-4"
         >
-          <span class="reveal fade-bottom">Rolex</span
+          <span class="reveal fade-bottom pr-1">Rolex</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors -translate-x-32 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Omega</span
+          class="transition-colors md:-translate-x-32 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Omega</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors translate-x-24 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Patek Phillipe</span
+          class="transition-colors md:translate-x-24 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Patek Phillipe</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >04</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors -translate-x-72 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Breitling</span
+          class="transition-colors md:-translate-x-48 lg:-translate-x-72 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Breitling</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >15</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors translate-x-60 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Cartier</span
+          class="transition-colors md:translate-x-60 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Cartier</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >10</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors translate-x-12 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Hamilton</span
+          class="transition-colors md:translate-x-12 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Hamilton</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >16</span
           ></a
         >
         <a href="#catalog" class="transition-colors flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Jaeger-LeCoultre</span
+          ><span class="reveal fade-bottom pr-1">Jaeger-LeCoultre</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >08</span
           ></a
         >
         <a
           href="#catalog"
-          class="transition-colors -translate-x-10 flex items-baseline gap-4"
-          ><span class="reveal fade-bottom">Grand Seiko</span
+          class="transition-colors md:-translate-x-10 flex items-baseline gap-4"
+          ><span class="reveal fade-bottom pr-1">Grand Seiko</span
           ><span
-            class="reveal fade-bottom text-3xl tracking-normal font-caudex font-bold"
+            class="reveal fade-bottom text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl tracking-normal font-caudex font-bold"
             >20</span
           ></a
         >
@@ -332,7 +346,7 @@
       <div class="w-full flex justify-center absolute bottom-0 left-0">
         <a
           href="#contact"
-          class="text-center m-10 py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
+          class="text-center m-10 py-3 px-5 font-archivo text-base lg:text-lg font-semibold text-neutral-500 border-2 border-neutral-400 rounded-full hover:-translate-y-2 transition-all hover:bg-lime-300 hover:text-black hover:border-lime-300 z-10"
         >
           Contact <span class="fa fa-arrow-down"></span>
         </a>
@@ -342,22 +356,31 @@
       id="contact"
       class="w-full min-h-screen bg-neutral-50 dark:bg-neutral-800 dark:text-neutral-300 flex flex-col p-6 relative justify-center"
     >
-      <section class="flex justify-between px-24 py-24 gap-24">
+      <section
+        class="flex flex-col lg:flex-row justify-between p-6 sm:p-10 md:p-20 2xl:p-24 gap-24"
+      >
         <section
-          class="flex flex-col gap-4 w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
+          class="flex flex-col gap-4 lg:w-5/12 font-archivo font-bold tracking-tighter uppercase justify-center"
         >
           <span
             class="reveal fade-bottom-delay flex flex-col items-center text-3xl gap-1"
           >
-            <h4 class="text-lg uppercase font-semibold">
+            <h4 class="text-lg uppercase font-semibold text-center">
               Have Questions? Call or Text Us
             </h4>
             <h4 class="text-xl capitalize font-semibold"></h4>
-            <span class="font-bold font-caudex text-4xl">(202) 555-0121</span>
+            <span class="font-bold font-caudex xl:text-3xl 2xl:text-4xl"
+              >(202) 555-0121</span
+            >
           </span>
         </section>
-        <section class="flex flex-col w-7/12">
-          <form action="" class="w-3/4 flex flex-col font-archivo gap-4">
+        <section
+          class="flex flex-col lg:w-7/12 xl:items-center 2xl:items-start text-xs sm:text-sm 2xl:text-base"
+        >
+          <form
+            action=""
+            class="xl:w-full 2xl:w-3/4 flex flex-col font-archivo gap-4"
+          >
             <section class="flex gap-6 w-full">
               <div class="reveal fade-bottom flex flex-col w-1/2">
                 <label for="fname">First Name*</label>
@@ -437,61 +460,63 @@
           </form>
         </section>
       </section>
-      <section class="icons flex w-5/6 self-center gap-20 p-24 font-archivo">
+      <section
+        class="icons flex flex-col lg:flex-row w-full self-center justify-evenly gap-10 text-sm 2xl:text-lg p-10 md:p-24 font-archivo"
+      >
         <section
-          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+          class="reveal fade-bottom flex flex-col sm:flex-row lg:flex-col lg:w-1/4 gap-6 items-center text-center"
         >
           <span
-            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
+            class="text-center w-max py-3 px-5 font-archivo md:text-base font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
             ><span
               class="fa fa-shield-heart text-neutral-600 dark:text-neutral-300 mr-2"
             ></span
             >Authorized Retailer</span
           >
-          <p class="text-neutral-500 dark:text-neutral-300">
+          <p class="text-neutral-500 dark:text-neutral-300 w-2/3">
             Official Authorized Dealer of over 40+ leading luxury brands.
           </p>
         </section>
         <section
-          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+          class="reveal fade-bottom flex flex-col sm:flex-row lg:flex-col lg:w-1/4 gap-6 items-center text-center"
         >
           <span
-            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
+            class="text-center w-max py-3 px-5 font-archivo md:text-base 2xl:text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
             ><span
               class="fa fa-headset text-neutral-600 dark:text-neutral-300 mr-2"
             ></span
             >Customer Support</span
           >
-          <p class="text-neutral-500 dark:text-neutral-300">
+          <p class="text-neutral-500 dark:text-neutral-300 w-2/3">
             Dedicated customer service staff ready to resolve any purchase or
             product issues.
           </p>
         </section>
         <section
-          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+          class="reveal fade-bottom flex flex-col sm:flex-row lg:flex-col lg:w-1/4 gap-6 items-center text-center"
         >
           <span
-            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
+            class="text-center w-max py-3 px-5 font-archivo md:text-base 2xl:text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
             ><span
               class="fa fa-truck-ramp-box text-neutral-600 dark:text-neutral-300 mr-2"
             ></span
             >Shipping + Returns</span
           >
-          <p class="text-neutral-500 dark:text-neutral-300">
+          <p class="text-neutral-500 dark:text-neutral-300 w-2/3">
             Swift delivery and flexible return window of seven days.
           </p>
         </section>
         <section
-          class="reveal fade-bottom flex flex-col w-1/4 gap-6 items-center text-center"
+          class="reveal fade-bottom flex flex-col sm:flex-row lg:flex-col lg:w-1/4 gap-6 items-center text-center"
         >
           <span
-            class="text-center w-max py-3 px-5 font-archivo text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
+            class="text-center w-max py-3 px-5 font-archivo md:text-base 2xl:text-lg font-semibold text-neutral-500 dark:text-neutral-300 border-2 border-neutral-400 rounded-full z-10"
             ><span
               class="fa fa-gift text-neutral-600 dark:text-neutral-300 mr-2"
             ></span
             >Curated Collection</span
           >
-          <p class="text-neutral-500 dark:text-neutral-300">
+          <p class="text-neutral-500 dark:text-neutral-300 w-2/3">
             We work with leading luxury brands to provide the best selection for
             discerning collectors.
           </p>
@@ -500,45 +525,50 @@
     </section>
     <section
       id="links"
-      class="flex w-full p-12 justify-between font-archivo pb-20 dark:bg-neutral-900"
+      class="flex flex-col md:flex-row w-full p-12 justify-between font-archivo pb-20 dark:bg-neutral-900 md:text-sm 2xl:text-base gap-10 md:gap-0"
     >
-      <section class="flex flex-col gap-4 w-1/6">
-        <span class="font-semibold dark:text-neutral-400">SHOP</span>
-        <ul
-          class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
-        >
-          <li>Watches</li>
-          <li>New Releases</li>
-          <li>Straps</li>
-          <li>Tools & Accessories</li>
-          <li>Gift Card</li>
-        </ul>
+      <section
+        class="flex w-full md:w-1/2 order-2 md:order-1 text-xs md:text-sm 2xl:text-base"
+      >
+        <section class="flex flex-col gap-4 w-1/3">
+          <span class="font-semibold dark:text-neutral-400">SHOP</span>
+          <ul
+            class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
+          >
+            <li>Watches</li>
+            <li>New Releases</li>
+            <li>Straps</li>
+            <li>Tools & Accessories</li>
+            <li>Gift Card</li>
+          </ul>
+        </section>
+        <section class="flex flex-col gap-4 w-1/3">
+          <span class="font-semibold dark:text-neutral-400">ABOUT</span>
+          <ul
+            class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
+          >
+            <li>Contact Us</li>
+            <li>Shipping & Returns</li>
+            <li>Log In to Account</li>
+            <li>Financing</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Refund Policy</li>
+            <li>(202) 555-0121</li>
+          </ul>
+        </section>
+        <section class="flex flex-col gap-4 w-1/3">
+          <span class="font-semibold dark:text-neutral-400">FOLLOW US</span>
+          <ul
+            class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
+          >
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </section>
       </section>
-      <section class="flex flex-col gap-4 w-1/6">
-        <span class="font-semibold dark:text-neutral-400">ABOUT</span>
-        <ul
-          class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
-        >
-          <li>Contact Us</li>
-          <li>Shipping & Returns</li>
-          <li>Log In to Account</li>
-          <li>Financing</li>
-          <li>Terms & Conditions</li>
-          <li>Privacy Policy</li>
-          <li>Refund Policy</li>
-          <li>(202) 555-0121</li>
-        </ul>
-      </section>
-      <section class="flex flex-col gap-4 w-1/6">
-        <span class="font-semibold dark:text-neutral-400">FOLLOW US</span>
-        <ul
-          class="flex flex-col gap-1 text-neutral-600 dark:text-neutral-500 w-max"
-        >
-          <li>Instagram</li>
-          <li>Twitter</li>
-        </ul>
-      </section>
-      <section class="flex flex-col gap-4 w-3/6">
+
+      <section class="flex flex-col gap-4 w-full md:w-3/6 order-1 md:order-2">
         <h6 class="uppercase font-semibold dark:text-neutral-400">
           Join Our Newsletter
         </h6>

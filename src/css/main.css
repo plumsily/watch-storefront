@@ -146,7 +146,8 @@ footer,
   }
   100% {
     opacity: 1;
-    transform: translateX(-342px);
+    /* transform: translateX(-342px); */
+    transform: translateX(-34.3333%);
   }
 }
 @keyframes title-move-right {
@@ -157,7 +158,8 @@ footer,
   }
   100% {
     opacity: 1;
-    transform: translateX(342px);
+    /* transform: translateX(342px); */
+    transform: translateX(34.3333%);
   }
 }
 
