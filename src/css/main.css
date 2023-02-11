@@ -30,14 +30,6 @@ html {
   max-width: 100%;
 }
 
-#home,
-#home .video,
-#catalog,
-#contact {
-  min-height: 100vh;
-  /* min-height: -webkit-fill-available; */
-}
-
 /******************************************
   /* LAYOUT
   /*******************************************/
